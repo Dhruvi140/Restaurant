@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiv Aurica - Order Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div class="order-container">
+            <div class="menu-section">
+                <h2 class="section-title">Order Online</h2>
+                
+                <!-- Category Filter -->
+                <div class="category-filter">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="appetizers">Appetizers</button>
+                    <button class="category-btn" data-category="main">Main Course</button>
+                    <button class="category-btn" data-category="breads">Breads</button>
+                    <button class="category-btn" data-category="desserts">Desserts</button>
+                </div>
+
+                <!-- Menu Items Grid -->
+                <div class="menu-grid">
+                    <!-- Items will be dynamically populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Shopping Cart -->
+            <div class="cart-section">
+                <div class="cart-container">
+                    <h3>Your Cart <i class="fas fa-shopping-cart"></i></h3>
+                    <div class="cart-items">
+                        <!-- Cart items will be dynamically populated -->
+                    </div>
+                    <div class="cart-summary">
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <span class="subtotal-amount">₹0.00</span>
+                        </div>
+                        <div class="tax">
+                            <span>Tax (5%):</span>
+                            <span class="tax-amount">₹0.00</span>
+                        </div>
+                        <div class="delivery">
+                            <span>Delivery:</span>
+                            <span class="delivery-amount">₹50.00</span>
+                        </div>
+                        <div class="total">
+                            <span>Total:</span>
+                            <span class="total-amount">₹0.00</span>
+                        </div>
+                    </div>
+                    <button class="checkout-btn" disabled>
+                        Proceed to Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="order.js"></script>
+</body>
+</html> 
